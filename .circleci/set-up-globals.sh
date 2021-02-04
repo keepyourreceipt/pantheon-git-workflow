@@ -58,8 +58,8 @@ source $BASH_ENV
 # Start Install Terminus Plugins
 #===============================
 INSTALL_TERMINUS_PLUGINS() {
-	composer create-project -n -d $HOME/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:$BUILD_TOOLS_VERSION
-	composer create-project -n -d $HOME/.terminus/plugins pantheon-systems/terminus-secrets-plugin:^1
+	composer create-project -n --no-dev -d $HOME/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:$BUILD_TOOLS_VERSION
+	composer create-project -n --no-dev -d $HOME/.terminus/plugins pantheon-systems/terminus-secrets-plugin:^1
 }
 
 # Create Terminus plugins directory and install plugins if needed
